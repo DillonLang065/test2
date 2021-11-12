@@ -9,6 +9,8 @@
    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script>
+  <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+  <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
   </head>
   <body>
     <div id="map" style="width: 100%; height: 800px;"></div>
@@ -20,15 +22,11 @@
     }).addTo(mymap);
 	    var marker = L.marker([51.12983, -2.73341]).addTo(mymap);
 	    marker.bindPopup("<img style='width: 200px' src='ITandComputers.jpg'><p><b>C Block</b></p><br>T-Level Digital");
-            L.polygon([
-    [-51.797336, -61.29752],
-    [-51.797499, -61.297531],
-    [-51.797658, -61.297333],
-    [-51.797837, -61.297182],
-    [-51.798086, -61.296984],
-    [-51.798332, -61.296802],
-    [-51.798405, -61.296528],
-    [-51.798551, -61.296399]
-]).addTo(mymap);
+	    var marker1 = L.marker([51.12993, -2.73331]).addTo(mymap);
+	    marker1.bindPopup("<img style='width: 200px' src='ITandComputers.jpg'><p><b>C Block</b></p><br>Engineering");
+	    //marker.bindPopup("<b>C Block</b><br>T-Level Digital").openPopup();
+	    
+	    mymap.addControl(new L.Control.Fullscreen());
+    </script>
   </body>    
 </html>
