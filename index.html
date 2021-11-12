@@ -25,7 +25,14 @@
 	    var marker1 = L.marker([51.12993, -2.73331]).addTo(mymap);
 	    marker1.bindPopup("<img style='width: 200px' src='ITandComputers.jpg'><p><b>C Block</b></p><br>Engineering");
 	    //marker.bindPopup("<b>C Block</b><br>T-Level Digital").openPopup();
-	    
+	    var polygon = L.polygon([
+    [11.707081, -64.406356],
+    [11.70715, -64.40641],
+    [11.70737, -64.406297],
+    [11.707249, -64.406147],
+    [11.707423, -64.406056],
+    [11.707433, -64.406174]
+]).addTo(mymap);
 	    mymap.addControl(new L.Control.Fullscreen());
     </script>
   </body>    
