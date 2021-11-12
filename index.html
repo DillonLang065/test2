@@ -76,7 +76,8 @@ var baseMaps = {
             "College": college
         };
         });	    
-	    
+	  L.control.layers(baseMaps, overlayMaps).addTo(mymap);
+	    mymap.addControl(new L.Control.Fullscreen());   
     </script>
   </body>    
 </html>
