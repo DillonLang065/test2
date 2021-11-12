@@ -29,6 +29,13 @@
             marker2.bindPopup("<img style='width: 200px' src='https___blogs-images.forbes.com_amydobson_files_2019_02_Musk-Exterior-1200x781.jpg'/><b>My House</b>").openPopup();
             var marker3 = L.marker([38.68551, -43.088379]).addTo(mymap)
             marker3.bindPopup("<img style='width: 200px' src='Swim.jpg'><p><b>'/><b>Blub</b>").openPopup();
+           
+var circle = L.circle([51.2864, -2.973175], {
+    color: 'yellow',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 10000
+}).addTo(mymap);
 	    var polygon = L.polygon([
     [11.70716, -64.406404],
     [11.707071, -64.406345],
@@ -36,6 +43,8 @@
     [11.707423, -64.406061],
     [11.707465, -64.406147],
     [11.70737, -64.406286]
+
+
 ]).addTo(mymap);
         
     
