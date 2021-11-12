@@ -23,8 +23,16 @@
 	    var marker1 = L.marker([51.12993, -2.73331]).addTo(mymap);
 	    marker1.bindPopup("<img style='width: 200px' src='ITandComputers.jpg'><p><b>C Block</b></p><br>Engineering");
 	    //marker.bindPopup("<b>C Block</b><br>T-Level Digital").openPopup();
-            var marker2 = L.marker([(-52.167641, -420.927944).addTp(mymap);
-            marker2.bindPopup("<img style='width: 200px' src='Edgy_Bird.jpg");
-    </script>
+            var myhouse = L.polygon([
+    [-51.797336, -61.29752],
+    [-51.797499, -61.297531],
+    [-51.797658, -61.297333],
+    [-51.797837, -61.297182],
+    [-51.798086, -61.296984],
+    [-51.798332, -61.296802],
+    [-51.798405, -61.296528],
+    [-51.798551, -61.296399]
+]).addTo(mymap);
+myhouse.bindPopup("I live here");
   </body>    
 </html>
