@@ -44,15 +44,6 @@
 	    maxZoom: 20,
 	    minZoom: 12,
 	    attribution: 'LiDAR 1m DSM Environment Agency OGL &copy; Crown Copyright 2021'
-	    var marker = L.marker([51.12983, -2.73341]).addTo(mymap);
-	    marker.bindPopup("<img style='width: 200px' src='ITandComputers.jpg'><p><b>C Block</b></p><br>T-Level Digital");
-	    var marker1 = L.marker([51.12993, -2.73331]).addTo(mymap);
-	    marker1.bindPopup("<img style='width: 200px' src='ITandComputers.jpg'><p><b>C Block</b></p><br>Engineering");
-	    //marker.bindPopup("<b>C Block</b><br>T-Level Digital").openPopup();
-            var marker2 = L.marker([11.707249, -64.406233]).addTo(mymap)
-            marker2.bindPopup("<img style='width: 200px' src='https___blogs-images.forbes.com_amydobson_files_2019_02_Musk-Exterior-1200x781.jpg'/><b>My House</b>").openPopup();
-            var marker3 = L.marker([38.68551, -43.088379]).addTo(mymap)
-            marker3.bindPopup("<img style='width: 200px' src='Swim.jpg'><p><b>'/><b>Blub</b>").openPopup();
 	    });
            
 
@@ -67,14 +58,16 @@
 
 ]).addTo(mymap);
         
-    
-
-	    var marker = L.marker([51.12983, -2.73341]).addTo(mymap);
+    	    var marker = L.marker([51.12983, -2.73341]).addTo(mymap);
 	    marker.bindPopup("<img style='width: 200px' src='ITandComputers.jpg'><p><b>C Block</b></p><br>T-Level Digital");
 	    var marker1 = L.marker([51.12993, -2.73331]).addTo(mymap);
 	    marker1.bindPopup("<img style='width: 200px' src='ITandComputers.jpg'><p><b>C Block</b></p><br>Engineering");
 	    //marker.bindPopup("<b>C Block</b><br>T-Level Digital").openPopup();
-	
+            var marker2 = L.marker([11.707249, -64.406233]).addTo(mymap)
+            marker2.bindPopup("<img style='width: 200px' src='https___blogs-images.forbes.com_amydobson_files_2019_02_Musk-Exterior-1200x781.jpg'/><b>My House</b>").openPopup();
+            var marker3 = L.marker([38.68551, -43.088379]).addTo(mymap)
+            marker3.bindPopup("<img style='width: 200px' src='Swim.jpg'><p><b>'/><b>Blub</b>").openPopup();
+
 	    var college = L.layerGroup([marker, marker1]).addTo(mymap);
       
 	var baseMaps = {
